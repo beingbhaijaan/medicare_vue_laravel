@@ -1,8 +1,7 @@
 /*  ========================================================
     Imports
     ========================================================  */
-    @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
     /*  ========================================================
         General tags
         ========================================================  */
@@ -3055,7 +3054,7 @@
         justify-content: space-between;
     }
     .patient-form .row{
-        padding:30px 0px;
+        padding-bottom:30px;
     }
     .ct-padding-top{
         padding-top:20px;;
@@ -3067,6 +3066,7 @@
         padding: 8px;
         width:auto !important;
         height:auto;
+        border-color: #d6d5d5;
      }
      .patient-form input[type="button"] {
         background-color: #0082bd;
@@ -3087,12 +3087,7 @@
          input{
             margin:0 5px;
          }
-         input[type="radio"]{
-            border-radius:50%;
-            &:focus{
-                border-radius:50%;
-            }
-         }
+         
      }
      label{
         font-size: 12px;
@@ -3106,8 +3101,9 @@
      }
      .patient-form td.w-100 {
         width: 100px;
-        padding: 0p 5px;
+        padding: 0px 5px;
     }
+
     .patient-form td.w-150 {
         width: 150px;
         padding: 0px 5px;
@@ -3117,7 +3113,14 @@
 
     }
     .h-345 p {
-        font-size: 12px;
+        font-size: 11px;
+    }
+    .h-32{
+        height: 32px;
+    }
+    .w-130{
+        width:130px !important;
+        margin:0 5px;
     }
     .ct-border{
         border-left:1px solid #ccc;
@@ -3145,6 +3148,9 @@
     .ct-tb-1 td input:focus{
         background-color: transparent;
      }
+     .ct-tb-1 td input[type="button"]:focus {
+        background-color: #0082bd;
+    }
      .medicom-header.sidebar+#content-index {
         padding-left: 200px;
     }
@@ -3167,7 +3173,57 @@
         float: left;
         margin: 25px 15px;
     }
-    .medicom-header.medical-nav.sidebar .container .navbar-collapse .custom_menu li a:hover{
-        background-color: #eee;
-        color:#707070;
+    .medicom-header.medical-nav.sidebar .container .navbar-collapse .custom_menu li a{
+        font-size: 12px;
+        text-transform: capitalize;
+        &:hover{
+            background-color: #eee;
+            color:#707070 !important;
+            i{
+                color:#bbb !important;
+            }
+        }
+        &:focus{
+            background-color: #eee;
+            color:#707070 !important;
+            i{
+                color:#bbb !important;
+            }
+        }
+        &:active{
+            background-color: #eee;
+            color:#707070 !important;
+            i{
+                color:#0082bd !important;
+            }
+        }
+        i{
+            font-size: 14px;
+            line-height: 20px;
+        }
     }
+    .medicom-header.medical-nav.sidebar + #content-index .sub-page-banner h1, .medicom-header.medical-nav.sidebar ~ #footer .sub-page-banner h1 {
+        font-size: 30px;
+        font-family: Open Sans Condensed,sans-serif;
+        text-transform: uppercase;
+    }
+    .medicom-header.medical-nav.sidebar + #content-index .sub-page-banner, .medicom-header.medical-nav.sidebar ~ #footer .sub-page-banner {
+        display: flex;
+        align-items: center;
+        height: 90px;
+        padding: 45px 0;
+    }
+    .ct-tb-2 td{
+        padding: 10px 5px;
+    }
+    .ct-btns .active{
+            border: 1px solid #d6d5d5;
+            padding:5px 10px;
+            border-radius:5px;
+    }
+    .ct-btns span{
+        margin-right:10px;
+    }
+    /*#ct_hsptl{
+        display:none;
+    }*/

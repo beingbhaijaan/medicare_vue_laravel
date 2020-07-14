@@ -182,6 +182,46 @@ module.exports = {
                 component: resolve(__dirname, "pages/patient/doctors.vue")
             });
             routes.push({
+                name: "patient-record",
+                path: "/patient/patient-record",
+                component: resolve(__dirname, "pages/patient/patient-record.vue")
+            });
+            routes.push({
+                name: "expenditure-1",
+                path: "/patient/expenditure-1",
+                component: resolve(__dirname, "pages/patient/expenditure-1.vue")
+            });
+            routes.push({
+                name: "expenditure",
+                path: "/patient/expenditure",
+                component: resolve(__dirname, "pages/patient/expenditure.vue")
+            });
+            routes.push({
+                name: "ipharmacy",
+                path: "/patient/ipharmacy",
+                component: resolve(__dirname, "pages/patient/ipharmacy.vue")
+            });
+            routes.push({
+                name: "medical-prediction",
+                path: "/patient/medical-prediction",
+                component: resolve(__dirname, "pages/patient/medical-prediction.vue")
+            });
+            routes.push({
+                name: "pharmacy",
+                path: "/patient/pharmacy",
+                component: resolve(__dirname, "pages/patient/pharmacy.vue")
+            });
+            routes.push({
+                name: "plan-your-trip-patient",
+                path: "/patient/plan-your-trip",
+                component: resolve(__dirname, "pages/patient/plan-your-trip.vue")
+            });
+            routes.push({
+                name: "donation-patient",
+                path: "/patient/donation",
+                component: resolve(__dirname, "pages/patient/donation.vue")
+            });
+            routes.push({
                 name: "edit-profile",
                 path: "/edit-profile",
                 component: resolve(__dirname, "pages/auth/edit-profile.vue")

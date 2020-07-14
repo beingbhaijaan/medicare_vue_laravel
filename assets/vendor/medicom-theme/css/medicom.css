@@ -27,7 +27,6 @@ Primary use:	MEDICAL THEME
 	EXTERNAL PLUGINS
 
 -------------------------------------------------------------------*/
-
 /* .... JQUERY UI .... */
 @import "./jquery-ui.css";
 
@@ -1718,7 +1717,6 @@ SUB PAGE
 -------------------------------------------------------------------*/
 
 .sub-page-banner {
-	background:url(~/static/images/theme/sub-page-banner.jpg) no-repeat center;
 	background-attachment:fixed;
 	height:316px;
 	position:relative;

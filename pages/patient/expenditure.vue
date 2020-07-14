@@ -3,7 +3,7 @@
 
         <!-- Sub Page Banner
         ============================================= -->
-        <Banner content="Patient profile"/>
+        <Banner content="Expenditure"/>
 
         <!-- Content Page
         ============================================= -->
@@ -20,106 +20,133 @@
                         <!-- Medical Records
                         ============================================= -->
                        <div class="padding_15 patient-form">
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 r">
-            <h2 class="light bordered record-heading">
-                PATIENT'S HISTORY
-                <img src="/images/icons/man.png" alt="Patient" style="width:64px;height:64px;float:right;">
-            </h2>
+   
+    <div class="p_bottom_20">
+        <div class="col-xs-12 col-sm-4 p_bottom_20">
+            TOTAL INCOME <input type="text" value="6080" class="w-130 h-32"> 
         </div>
+        <div class="col-xs-12 col-sm-5 p_bottom_20">
+            DATE FROM <input type="date" class="w-130 h-32"> TO <input type="date" class="w-130 h-32"/> 
+        </div>
+        <div class="col-xs-12 col-sm-3 p_bottom_20 flex-show">
+        <input type="radio"> CHOW INCOME in Graph
+        </div>
+
     </div>
-    <form>
      <!-- first box-->
 <div class="row">
-    <div class="col-xs-12 col-sm-12 p_bottom_20">
-    <div class="flex-show p_bottom_20">
-    <span class="flex-show"><input type="radio" value="+"> ALL</span> &nbsp;
-    <span class="flex-show"><input type="radio" value="+"> TRIP</span>&nbsp;
-    <span class="flex-show"><input type="radio" value="+"> HOSPITAL</span>&nbsp;
-    <span class="flex-show"><input type="radio" value="+"> MEDICINE</span>&nbsp;
-    <span class="flex-show"><input type="radio" value="+"> DONATION</span>
-    </div>
+    <div class="col-xs-12 col-sm-12 p_bottom_20 ">
+    <div class=" p_bottom_20 flex-show ">
+    <span class="flex-show"><input type="radio"> THIS MONTH</span>&nbsp; <span class="flex-show"><input type="radio"> PREVIOUS MONTH</span>
+   </div>
     <table style="width:100%;" class="ct-tb-1">
     <tr>
     <th>SL.N</th>
     <th>DATE</th>
-     <th>PLACE</th>
-      <th>REASON</th>
+     <th>HOSPITLA</th>
+      <th>TOTAL PATIENTS</th>
        <th>AMOUNT</th>
         <th>DESCRIPTION</th>
          <th>DETAILS</th>
     </tr>
     <tr>
-    <td>1</td>
-    <td>22/3/20</td>
-    <td>DELHI</td>
-    <td>TRIP</td>
-    <td>1590</td>
-    <td>TRIP TOMUNNAR FOR FOUR DAYS</td>
-    <td><input type="button" value="SHOW" style="width:100% !important;"></td>
+        <td>1</td>
+        <td>22/3/20</td>
+        <td>CHECK DESCRIPTION</td>
+        <td>5</td>
+        <td>1590</td>
+        <td>ABCD, HOSPITAL</td>
+        <td><input id="bt_hsptl" type="button" value="SHOW" style="width:100% !important;"></td>
     </tr>
     <tr>
-    <td>1</td>
-    <td>22/3/20</td>
-    <td>DELHI</td>
-    <td>TRIP</td>
-    <td>1590</td>
-    <td>TRIP TOMUNNAR FOR FOUR DAYS</td>
-    <td><input type="button" value="SHOW" style="width:100% !important;"></td>
+        <td>1</td>
+        <td>22/3/20</td>
+        <td>CHECK DESCRIPTION</td>
+        <td>5</td>
+        <td>1590</td>
+        <td>ABCD, HOSPITAL</td>
+        <td><input type="button" value="SHOW" style="width:100% !important;"></td>
     </tr>
     <tr>
-    <td>1</td>
-    <td>22/3/20</td>
-    <td>DELHI</td>
-    <td>TRIP</td>
-    <td>1590</td>
-    <td>TRIP TOMUNNAR FOR FOUR DAYS</td>
-    <td><input type="button" value="SHOW" style="width:100% !important;"></td>
+        <td>1</td>
+        <td>22/3/20</td>
+        <td>CHECK DESCRIPTION</td>
+        <td>5</td>
+        <td>1590</td>
+        <td>ABCD, HOSPITAL</td>
+        <td><input type="button" value="SHOW" style="width:100% !important;"></td>
     </tr>
     
     </table>
      </div>
      </div>
      <!-- 2nd box-->
-<div class="row">
+<div id="ct_hsptl" class="row">
     <div class="col-xs-12 col-sm-12 p_bottom_20">
-    <h4>WHEN CLICKED ON FIRST LINK</h4>
-   
     <table style="width:50%;" class="ct-tb-1">
     <tr>
     <th>SL.N</th>
-      <th>DATE</th>
-      <th>CREDIT POINTS</th>
-       <th>REASON</th>
+      <th>HOSPITLA</th>
+      <th>TOTAL PATIENTS</th>
+       <th>AMOUNT</th>
          <th>DETAILS</th>
     </tr>
     <tr>
-    <td>1</td>
-    <td>23/03/20</td>
-    <td>2500</td>
-    <td>FROM PLAN MY TRIPx</td>
-    <td><input type="button" value="SHOW" style="width:100% !important;"></td>
+        <td>1</td>
+        <td>CHECK DESCRIPTION</td>
+        <td>5</td>
+        <td>1590</td>
+        <td><input id="ct_patient" type="button" value="SHOW" style="width:100% !important;"></td>
     </tr>
     <tr>
-    <td>1</td>
-    <td>23/03/20</td>
-    <td>2500</td>
-    <td>FROM PLAN MY TRIPx</td>
-    <td><input type="button" value="SHOW" style="width:100% !important;"></td>
+       <td>1</td>
+        <td>CHECK DESCRIPTION</td>
+        <td>5</td>
+        <td>1590</td>
+        <td><input id="ct_patient" type="button" value="SHOW" style="width:100% !important;"></td>
     </tr>
     <tr>
-    <td>1</td>
-    <td>23/03/20</td>
-    <td>2500</td>
-    <td>FROM PLAN MY TRIPx</td>
-    <td><input type="button" value="SHOW" style="width:100% !important;"></td>
+        <td>1</td>
+        <td>CHECK DESCRIPTION</td>
+        <td>5</td>
+        <td>1590</td>
+        <td><input id="ct_patient" type="button" value="SHOW" style="width:100% !important;"></td>
     </tr>
     </table>
      </div>
      </div>
-     
-     TOTAL CREDIT POINTS <input type="text" value="6080" style="width: 130px !important;margin:0 5px;"> <input type="button" value="CREDIT TO MY E WALLET" style="width:200px !important;">
-        </form> 
+     <!-- 3rd box-->
+<div id="ct-patient" class="row">
+    <div class="col-xs-12 col-sm-12 p_bottom_20">
+    <table style="width:50%;" class="ct-tb-1">
+    <tr>
+    <th>SL.N</th>
+      <th>PATIENT NAME</th>
+      <th>NEXT APPOINTMENTS</th>
+       <th>AMOUNT</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>VISHNU</td>
+        <td>22/04/20</td>
+        <td>1590</td>
+    </tr>
+    <tr>
+         <td>1</td>
+        <td>VISHNU</td>
+        <td>22/04/20</td>
+        <td>1590</td>
+    </tr>
+    <tr>
+         <td>1</td>
+        <td>VISHNU</td>
+        <td>22/04/20</td>
+        <td>1590</td>
+    </tr>
+    </table>
+     </div>
+     </div>
+        
 </div>
 
                     </div>
@@ -139,7 +166,7 @@
     import { mapGetters } from 'vuex'
 
     export default {
-        name: 'Profile',
+        name: 'expenditure',
         middleware: 'patient',
         components: { Banner, PatientCard, AppointmentsFeed, MedicalRecords },
         data () {

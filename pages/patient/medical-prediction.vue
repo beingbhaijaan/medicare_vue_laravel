@@ -3,7 +3,7 @@
 
         <!-- Sub Page Banner
         ============================================= -->
-        <Banner content="Patient profile"/>
+        <Banner content="medical prediction"/>
 
         <!-- Content Page
         ============================================= -->
@@ -20,132 +20,109 @@
                         <!-- Medical Records
                         ============================================= -->
                        <div class="padding_15 patient-form">
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 r">
-            <h2 class="light bordered record-heading">
-                DOCTOR'S RECORD
-                <img src="/images/icons/man.png" alt="Patient" style="width:64px;height:64px;float:right;">
-            </h2>
+    <div class="p_bottom_20">
+        <div class="col-xs-12 col-sm-12 p_bottom_20">
+          ENTER SYMPTOMS <input type="text" value="ABCD" style="width: 200px !important;margin:0 5px;">
         </div>
+<div class="col-xs-12 col-sm-12 p_bottom_20">
+        <div class="flex-show ct-btns">
+            <span>FEVER</span>
+            <span>COUGH</span>
+            <span>BACK PAIN</span>
+            <span class="active">HEAD ACHE</span>
+        </div>
+        <input type="button" value="PREDICT" style="width:100px !important;">
+</div>
     </div>
-    <form>
+    
      <!-- first box-->
 <div class="row">
-    <div class="col-xs-12 col-sm-12 p_bottom_20 ">
-    <div class=" p_bottom_20 flex-show ">
-    <span class="flex-show"><input type="radio"> THIS MONTH</span>&nbsp; <span class="flex-show"><input type="radio"> PREVIOUS MONTH</span>
-   </div>
+    <div class="col-xs-12 col-sm-12 p_bottom_20">
     <table style="width:100%;" class="ct-tb-1">
     <tr>
     <th>SL.N</th>
-    <th>DATE</th>
-     <th>HOSPITLA</th>
-      <th>TOTAL PATIENTS</th>
-       <th>AMOUNT</th>
-        <th>DESCRIPTION</th>
-         <th>DETAILS</th>
+    <th>PREDICTION</th>
+      <th>SYMPTOMS</th>
+       <th>ACCURACY PERCENTAGE</th>
+        <th>BOOK AN APPOINTMENT</th>
+        
     </tr>
     <tr>
         <td>1</td>
-        <td>22/3/20</td>
-        <td>CHECK DESCRIPTION</td>
-        <td>5</td>
-        <td>1590</td>
-        <td>ABCD, HOSPITAL</td>
-        <td><input type="button" value="SHOW" style="width:100% !important;"></td>
+        <td>abcd</td>
+        <td>Fever, Headache, Backpain</td>
+        <td>79%</td>
+        <td><input type="button" value="BOOK" style="width:75px !important;"></td>
     </tr>
     <tr>
-        <td>1</td>
-        <td>22/3/20</td>
-        <td>CHECK DESCRIPTION</td>
-        <td>5</td>
-        <td>1590</td>
-        <td>ABCD, HOSPITAL</td>
-        <td><input type="button" value="SHOW" style="width:100% !important;"></td>
+        <td>2</td>
+        <td>abcd</td>
+        <td>Fever, Headache, Backpain</td>
+        <td>79%</td>
+        <td><input type="button" value="BOOK" style="width:75px !important;"></td>
     </tr>
     <tr>
-        <td>1</td>
-        <td>22/3/20</td>
-        <td>CHECK DESCRIPTION</td>
-        <td>5</td>
-        <td>1590</td>
-        <td>ABCD, HOSPITAL</td>
-        <td><input type="button" value="SHOW" style="width:100% !important;"></td>
+        <td>3</td>
+        <td>abcd</td>
+        <td>Fever, Headache, Backpain</td>
+        <td>79%</td>
+        <td><input type="button" value="BOOK" style="width:75px !important;"></td>
     </tr>
-    
     </table>
      </div>
      </div>
-     <!-- 2nd box-->
+      <!-- 2ND box-->
 <div class="row">
     <div class="col-xs-12 col-sm-12 p_bottom_20">
-    <h4>WHEN CLICKED ON FIRST LINK</h4>
-    <table style="width:50%;" class="ct-tb-1">
+    <div class="col-xs-12 col-sm-8 p_bottom_20">
+    <span>BOOK AN APPOINTMENT FOR XYZ</span>
+     <div class="flex-show p_bottom_20" style="margin-top:8px;">
+                <span>SEARCH BY</span>
+                <span class="flex-show"><input type="radio"> DOCTOR</span> &nbsp;
+                <span class="flex-show"><input type="radio"> HOSPITAL</span>&nbsp;
+               
+        </div>
+    </div> 
+    <div class="col-xs-12 col-sm-4 p_bottom_20">
+     <div class="p_bottom_20" style="text-align:right;">
+      ENTER HOSPITAL NAME OR DOCTOR NAME <input type="text" value="6080" class="w-130 h-32" style="margin-top:8px;"> 
+               
+        </div>
+    </div>    
+    <table style="width:100%;" class="ct-tb-1">
     <tr>
     <th>SL.N</th>
-      <th>HOSPITLA</th>
-      <th>TOTAL PATIENTS</th>
-       <th>AMOUNT</th>
-         <th>DETAILS</th>
+    <th>DOCTOR</th>
+      <th>HOS</th>
+       <th>RATING</th>
+        <th>BOOK AN APPOINTMENT</th>
+        
     </tr>
     <tr>
-        <td>1</td>
-        <td>CHECK DESCRIPTION</td>
-        <td>5</td>
-        <td>1590</td>
-        <td><input type="button" value="SHOW" style="width:100% !important;"></td>
+        <td>3</td>
+        <td>abcd</td>
+        <td>xyz Hospital</td>
+        <td>4</td>
+        <td><input type="button" value="BOOK" style="width:75px !important;"></td>
     </tr>
     <tr>
-       <td>1</td>
-        <td>CHECK DESCRIPTION</td>
-        <td>5</td>
-        <td>1590</td>
-        <td><input type="button" value="SHOW" style="width:100% !important;"></td>
+        <td>3</td>
+        <td>abcd</td>
+        <td>xyz Hospital</td>
+        <td>4</td>
+        <td><input type="button" value="BOOK" style="width:75px !important;"></td>
     </tr>
     <tr>
-        <td>1</td>
-        <td>CHECK DESCRIPTION</td>
-        <td>5</td>
-        <td>1590</td>
-        <td><input type="button" value="SHOW" style="width:100% !important;"></td>
+        <td>3</td>
+        <td>abcd</td>
+        <td>xyz Hospital</td>
+        <td>4</td>
+        <td><input type="button" value="BOOK" style="width:75px !important;"></td>
     </tr>
     </table>
      </div>
      </div>
-     <!-- 3rd box-->
-<div class="row">
-    <div class="col-xs-12 col-sm-12 p_bottom_20">
-    <h4>WHEN CLICKED ON FIRST LINK</h4>
-    
-    <table style="width:50%;" class="ct-tb-1">
-    <tr>
-    <th>SL.N</th>
-      <th>PATIENT NAME</th>
-      <th>NEXT APPOINTMENTS</th>
-       <th>AMOUNT</th>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>VISHNU</td>
-        <td>22/04/20</td>
-        <td>1590</td>
-    </tr>
-    <tr>
-         <td>1</td>
-        <td>VISHNU</td>
-        <td>22/04/20</td>
-        <td>1590</td>
-    </tr>
-    <tr>
-         <td>1</td>
-        <td>VISHNU</td>
-        <td>22/04/20</td>
-        <td>1590</td>
-    </tr>
-    </table>
-     </div>
-     </div>
-        </form> 
+     
 </div>
 
                     </div>
@@ -165,7 +142,7 @@
     import { mapGetters } from 'vuex'
 
     export default {
-        name: 'Profile',
+        name: 'medical-prediction',
         middleware: 'patient',
         components: { Banner, PatientCard, AppointmentsFeed, MedicalRecords },
         data () {
