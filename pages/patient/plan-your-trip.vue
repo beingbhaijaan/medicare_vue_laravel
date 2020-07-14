@@ -20,12 +20,12 @@
                         <!-- Medical Records
                         ============================================= -->
                        <div class="padding_15 patient-form">
-    <div class="p_bottom_20">
+    <div class="p_bottom_20 h-32 flex-show tb-sub-heading">
         <div class="col-xs-12 col-sm-5 p_bottom_20">
             DATE FROM <input type="date" class="w-130 h-32"> TO <input type="date" class="w-130 h-32"/>  
         </div>
         <div class="col-xs-12 col-sm-5 p_bottom_20 flex-show">
-            <span class="flex-show"><input type="radio"> LOW TO HIGH</span> <span class="flex-show" style="margin-left:20px;"><input type="radio"> HIGH TO LOW</span>
+            <span class="flex-show"><input type="radio" name="range"> LOW TO HIGH</span> <span class="flex-show" style="margin-left:20px;"><input type="radio" name="range"> HIGH TO LOW</span>
         </div>
         <div class="col-xs-12 col-sm-2 p_bottom_20 ">
        
@@ -36,31 +36,31 @@
      <!-- first box-->
 <div class="row">
     <div class="col-xs-12 col-sm-12 p_bottom_20">
-    <div class="col-xs-12 col-sm-2 p_bottom_20">
+    <div class="col-xs-12 col-sm-2 p_bottom_20 tb-sub-heading">
         <div class="p_bottom_20">
-                <span class="flex-show"><input type="radio"> 5 STAR</span>&nbsp;
-                <span class="flex-show"><input type="radio"> 4 STAR</span>&nbsp;
-                <span class="flex-show"><input type="radio"> 3 STAR</span>&nbsp;
-                <span class="flex-show"><input type="radio"> 2 STAR</span>
+                <span class="flex-show"><input type="radio" name="list1"> 5 STAR</span>&nbsp;
+                <span class="flex-show"><input type="radio" name="list1"> 4 STAR</span>&nbsp;
+                <span class="flex-show"><input type="radio" name="list1"> 3 STAR</span>&nbsp;
+                <span class="flex-show"><input type="radio" name="list1"> 2 STAR</span>
         </div>
     </div>
-    <div class="col-xs-12 col-sm-2 p_bottom_20">
+    <div class="col-xs-12 col-sm-2 p_bottom_20 tb-sub-heading">
         <div class="p_bottom_20">
-                <span class="flex-show"><input type="radio"> GYM</span>&nbsp;
-                <span class="flex-show"><input type="radio"> SWIMMING</span>&nbsp;
-                <span class="flex-show"><input type="radio"> BAR</span>&nbsp;
-                <span class="flex-show"><input type="radio"> RESTURANT</span>
+                <span class="flex-show"><input type="radio" name="list2"> GYM</span>&nbsp;
+                <span class="flex-show"><input type="radio" name="list2"> SWIMMING</span>&nbsp;
+                <span class="flex-show"><input type="radio" name="list2"> BAR</span>&nbsp;
+                <span class="flex-show"><input type="radio" name="list2"> RESTURANT</span>
         </div>
     </div>
-    <div class="col-xs-12 col-sm-2 p_bottom_20">
+    <div class="col-xs-12 col-sm-2 p_bottom_20 tb-sub-heading">
         <div class="p_bottom_20">
-                <span class="flex-show"><input type="radio"> PARKING</span>&nbsp;
-                <span class="flex-show"><input type="radio"> NON-AC</span>&nbsp;
-                <span class="flex-show"><input type="radio"> AC</span>&nbsp;
-                <span class="flex-show"><input type="radio"> RATING</span>
+                <span class="flex-show"><input type="radio" name="list3"> PARKING</span>&nbsp;
+                <span class="flex-show"><input type="radio" name="list3"> NON-AC</span>&nbsp;
+                <span class="flex-show"><input type="radio" name="list3"> AC</span>&nbsp;
+                <span class="flex-show"><input type="radio" name="list3"> RATING</span>
         </div>
     </div>
-    <div class="col-xs-12 col-sm-4 p_bottom_20">
+    <div class="col-xs-12 col-sm-4 p_bottom_20 tb-sub-heading">
         <div class="p_bottom_20">
                 TOTAL ROOMS <input type="text" value="6080" class="w-130 h-32"> 
         </div>

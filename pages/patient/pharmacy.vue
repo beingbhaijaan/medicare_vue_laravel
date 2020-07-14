@@ -3,7 +3,7 @@
 
         <!-- Sub Page Banner
         ============================================= -->
-        <Banner content="Expenditure 1"/>
+        <Banner content="PHARMACY"/>
 
         <!-- Content Page
         ============================================= -->

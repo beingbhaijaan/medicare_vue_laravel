@@ -20,28 +20,27 @@
                         <!-- Medical Records
                         ============================================= -->
                        <div class="padding_15 patient-form">
-    <div class="p_bottom_20">
-        <div class="col-xs-12 col-sm-4 p_bottom_20">
-            TOTAL EXPENSE <input type="text" value="6080" class="w-130 h-32"> 
-        </div>
-        <div class="col-xs-12 col-sm-5 p_bottom_20">
-            DATE FROM <input type="date" class="w-130 h-32"> TO <input type="date" class="w-130 h-32"/> 
-        </div>
-        <div class="col-xs-12 col-sm-3 p_bottom_20 flex-show">
-       
+   <div class="p_bottom_20">
+        <div class="col-xs-12 col-sm-12 p_bottom_20 flex-show tb-sub-heading">
+                <div>
+                    TOTAL INCOME <input type="text" value="6080" class="w-130 h-32"> 
+                </div>
+                <div style="margin-left:15px;">
+                    DATE FROM <input type="date" class="w-130 h-32"> TO <input type="date" class="w-130 h-32"/> 
+                </div>
         </div>
 
     </div>
     
      <!-- first box-->
 <div class="row">
-    <div class="col-xs-12 col-sm-12 p_bottom_20">
-        <div class="flex-show p_bottom_20">
-                <span class="flex-show"><input type="radio"> ALL</span> &nbsp;
-                <span class="flex-show"><input type="radio"> TRIP</span>&nbsp;
-                <span class="flex-show"><input type="radio"> HOSPITAL</span>&nbsp;
-                <span class="flex-show"><input type="radio"> MEDICINE</span>&nbsp;
-                <span class="flex-show"><input type="radio"> DONATION</span>
+    <div class="col-xs-12 col-sm-12 p_bottom_20" style="padding-top:25px;">
+        <div class="flex-show p_bottom_20 tb-sub-heading">
+                <span class="flex-show"><input type="radio" name="ct_report"> ALL</span> &nbsp;
+                <span class="flex-show"><input type="radio" name="ct_report"> TRIP</span>&nbsp;
+                <span class="flex-show"><input type="radio" name="ct_report"> HOSPITAL</span>&nbsp;
+                <span class="flex-show"><input type="radio" name="ct_report"> MEDICINE</span>&nbsp;
+                <span class="flex-show"><input type="radio" name="ct_report"> DONATION</span>
         </div>
     <table style="width:100%;" class="ct-tb-1">
     <tr>
@@ -87,7 +86,6 @@
      <!-- 2nd box-->
 <div class="row">
     <div class="col-xs-12 col-sm-12 p_bottom_20">
-    <h4>WHEN CLICKED ON FIRST LINK</h4>
    
     <table style="width:50%;" class="ct-tb-1">
     <tr>
@@ -121,9 +119,9 @@
     </table>
      </div>
      </div>
-     
-     TOTAL CREDIT POINTS <input type="text" value="6080" style="width: 130px !important;margin:0 5px;"> <input type="button" value="CREDIT TO MY E WALLET" style="width:200px !important;">
-     
+     <span class="tb-sub-heading">
+     TOTAL CREDIT POINTS <input type="text" value="6080" class="w-130 h-32"> <input type="button" value="CREDIT TO MY E WALLET" style="width:200px !important;" class="h-32">
+     </span>
 </div>
 
                     </div>

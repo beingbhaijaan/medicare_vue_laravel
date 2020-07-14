@@ -21,17 +21,18 @@
                         ============================================= -->
                        <div class="padding_15 patient-form">
     <div class="p_bottom_20">
-        <div class="col-xs-12 col-sm-12 p_bottom_20">
-          ENTER SYMPTOMS <input type="text" value="ABCD" style="width: 200px !important;margin:0 5px;">
+        <div class="col-xs-12 col-sm-12 p_bottom_20 tb-sub-heading">
+          ENTER SYMPTOMS <input type="text" value="ABCD" style="width: 200px !important;margin:0 5px;" class="h-32">
         </div>
 <div class="col-xs-12 col-sm-12 p_bottom_20">
-        <div class="flex-show ct-btns">
+        <div class="flex-show ct-btns tb-sub-heading">
             <span>FEVER</span>
             <span>COUGH</span>
             <span>BACK PAIN</span>
             <span class="active">HEAD ACHE</span>
+            <input type="button" value="PREDICT" style="width:100px !important;">
         </div>
-        <input type="button" value="PREDICT" style="width:100px !important;">
+        
 </div>
     </div>
     
@@ -74,7 +75,7 @@
       <!-- 2ND box-->
 <div class="row">
     <div class="col-xs-12 col-sm-12 p_bottom_20">
-    <div class="col-xs-12 col-sm-8 p_bottom_20">
+    <div class="col-xs-12 col-sm-8 p_bottom_20 tb-sub-heading">
     <span>BOOK AN APPOINTMENT FOR XYZ</span>
      <div class="flex-show p_bottom_20" style="margin-top:8px;">
                 <span>SEARCH BY</span>
@@ -84,7 +85,7 @@
         </div>
     </div> 
     <div class="col-xs-12 col-sm-4 p_bottom_20">
-     <div class="p_bottom_20" style="text-align:right;">
+     <div class="p_bottom_20 tb-sub-heading" style="text-align:right;">
       ENTER HOSPITAL NAME OR DOCTOR NAME <input type="text" value="6080" class="w-130 h-32" style="margin-top:8px;"> 
                
         </div>

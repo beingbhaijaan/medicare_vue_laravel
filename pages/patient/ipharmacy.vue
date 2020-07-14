@@ -21,8 +21,8 @@
                         ============================================= -->
                        <div class="padding_15 patient-form">
     <div class="p_bottom_20">
-        <div class="col-xs-12 col-sm-12 p_bottom_20">
-          SEARCH <input type="text" value="ABCD MEDICINE" style="width: 200px !important;margin:0 5px;"> <input type="button" value="UPLOAD PRECRIPTION" style="width:200px !important;">
+        <div class="col-xs-12 col-sm-12 p_bottom_20 tb-sub-heading">
+          SEARCH <input type="text" value="ABCD MEDICINE" style="width: 200px !important;margin:0 5px;" class="h-32"> <input type="button" value="UPLOAD PRECRIPTION" style="width:200px !important;" class="h-32">
         </div>
         
 

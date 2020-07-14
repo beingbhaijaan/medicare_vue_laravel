@@ -26,21 +26,21 @@
 <div class="row">
     <div class="col-xs-12 col-sm-12 p_bottom_20">
             <div class="p_bottom_20">
-            <table class="ct-tb-2">
+            <table class="ct-tb-2 tb-sub-heading">
             <tr>
                 <td>DONATION AMOUNT </td>
                 <td><input type="text" value="6080" class="w-130 h-32"></td>
             </tr>
             <tr>
                 <td>FOR </td>
-                <td><select  class="w-130 h-32">
+                <td><select  class="w-130">
                     <option>PET</option>
                     </select></td>
             </tr>
             </table>
                   
             </div>
-            <div class="flex-show p_bottom_20">
+            <div class="flex-show p_bottom_20 tb-sub-heading">
                 <span class="flex-show"><input type="radio"> MAKE IT ANONYMOUS</span> &nbsp;
             </div>
     <table style="width:50%;" class="ct-tb-1">
