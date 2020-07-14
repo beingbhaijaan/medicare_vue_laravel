@@ -189,7 +189,7 @@ caption a.btn-bordered:hover{ color:#1ABC9C}
 
 
 /*sub page*/
-.sub-page-banner .overlay{background:url(~/static/images/theme/cyan-overlay.png) repeat;}
+.sub-page-banner .overlay{background:rgba(0,130,189,.5);}
 .team-des-btn.active{ background:#1ABC9C}
 .team-member-description .team-member-desc-inner{ background:url(~/static/images/theme/cyan-overlay.png) repeat; border:1px solid #1b7fb1;
 /*box shadow should be light*/

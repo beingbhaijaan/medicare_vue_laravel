@@ -1,8 +1,7 @@
 /*  ========================================================
     Imports
     ========================================================  */
-    @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
     /*  ========================================================
         General tags
         ========================================================  */
@@ -19,22 +18,28 @@
         margin: 0 0 10px;
         float: none;
         color: #646464;
-        box-shadow: 0px 10px 16px rgba(0,0,0,0.1);
+        border: 1px solid #eee;
         height: 40px;
-        background: $c_white;
-        appearance: none;
-        -webkit-appearance: none;
+        background: #fff;
+        box-shadow: 0 3px 0 #eee;
+        transition: all .2s ease-out;
         @include transition(all, 0.2s, ease-out);
-    
+        
         &:focus {
             background: $c_grey_light;
-            box-shadow: 0px 10px 16px rgba(0, 0, 0, .1);
+            box-shadow: 0 3px 0 #eee;
             outline: none;
         }
     
         &.disabled {
             border: 1px solid #ddd;
             box-shadow: 0 3px 0 #ddd;
+        }
+    }
+    input[type="radio"]{
+        box-shadow: none;
+        &:focus {
+            box-shadow: none;
         }
     }
     
@@ -1448,7 +1453,7 @@
     
             &:before {
                 height: 100%;
-                background: rgba(28, 196, 166, 0.5);
+                background: rgba(0,130,189,.5);
                 z-index: 0;
             }
     
@@ -2250,7 +2255,7 @@
     
     .form-control.custom_badge {
         max-width: 40px;
-        background-color: #f1f1f1;
+        background-color: #f1f1f1 !important;
         color: #aaa;
         text-align: center;
         font-weight: 700;
@@ -3055,21 +3060,23 @@
         justify-content: space-between;
     }
     .patient-form .row{
-        padding:30px 0px;
+        padding-bottom:30px; 
     }
     .ct-padding-top{
         padding-top:20px;;
     }
     .patient-form .form-control, .patient-form input, .patient-form select, .patient-form textarea{
-    box-shadow:none;
+   /* box-shadow:none;*/
+   font-size: 12px;
     }
     .patient-form input[type="radio"] {
         padding: 8px;
         width:auto !important;
         height:auto;
+        border-color: #d6d5d5;
      }
      .patient-form input[type="button"] {
-        background-color: #0082bd;
+        background-color: #0C9D80;
         color:#fff;
         padding: 6px 10px;
         min-width:30px !important; 
@@ -3087,51 +3094,43 @@
          input{
             margin:0 5px;
          }
-         input[type="radio"]{
-            border-radius:50%;
-            &:focus{
-                border-radius:50%;
-            }
-         }
+         
      }
      label{
         font-size: 12px;
      }
-     .patient-form input[type="text"], .patient-form input[type="email"], 
-     .patient-form input[type="number"], .patient-form select{
+     .patient-form.pat-record-form input[type="text"], .patient-form.pat-record-form input[type="email"], 
+     .patient-form.pat-record-form input[type="number"], .patient-form.pat-record-form select{
         font-size: 12px;
-        height: 30px !important;
+        height: 45px !important;
         padding: 2px 9px;
-        border-color: #d6d5d5;
      }
      .patient-form td.w-100 {
         width: 100px;
-        padding: 0p 5px;
+        padding: 0px 5px;
     }
+
     .patient-form td.w-150 {
         width: 150px;
         padding: 0px 5px;
     }
-    .h-345{
-        height:360px;
-
+    
+    .h-32{
+        height: 32px !important;
     }
-    .h-345 p {
-        font-size: 12px;
+    .w-130{
+        width:130px !important;
+        margin:0 5px;
+        padding: 10px 5px;
     }
     .ct-border{
         border-left:1px solid #ccc;
         border-right:1px solid #ccc;
     }
     .ct-tb-1{
-        border: 1px solid #000;
+        border: 1px solid #ccc;
     }
-    .ct-tb-1 tr:first-child, .ct-tb-1 th:first-child{
-        border: 1px solid #000;
-    }
-    .ct-tb-1 tr td:first-child{
-        border-right: 1px solid #000;
-    }
+    
     .ct-tb-1 td:first-child, .ct-tb-1 th:first-child{
         width:40px;
     }
@@ -3145,6 +3144,9 @@
     .ct-tb-1 td input:focus{
         background-color: transparent;
      }
+     .ct-tb-1 td input[type="button"]:focus {
+        background-color: #0082bd;
+    }
      .medicom-header.sidebar+#content-index {
         padding-left: 200px;
     }
@@ -3167,7 +3169,114 @@
         float: left;
         margin: 25px 15px;
     }
-    .medicom-header.medical-nav.sidebar .container .navbar-collapse .custom_menu li a:hover{
-        background-color: #eee;
-        color:#707070;
+    .medicom-header.medical-nav.sidebar .container .navbar-collapse .custom_menu li a{
+        font-size: 12px;
+        text-transform: capitalize;
+        &:hover{
+            background-color: #eee;
+            color:#707070 !important;
+            i{
+                color:#bbb !important;
+            }
+        }
+        &:focus{
+            background-color: #eee;
+            color:#707070 !important;
+            i{
+                color:#bbb !important;
+            }
+        }
+        &:active{
+            background-color: #eee;
+            color:#707070 !important;
+            i{
+                color:#0082bd !important;
+            }
+        }
+        i{
+            font-size: 14px;
+            line-height: 20px;
+        }
     }
+    .medicom-header.medical-nav.sidebar + #content-index .sub-page-banner h1, .medicom-header.medical-nav.sidebar ~ #footer .sub-page-banner h1 {
+        font-size: 30px;
+        font-family: Open Sans Condensed,sans-serif;
+        text-transform: uppercase;
+    }
+    .medicom-header.medical-nav.sidebar + #content-index .sub-page-banner, .medicom-header.medical-nav.sidebar ~ #footer .sub-page-banner {
+        display: flex;
+        align-items: center;
+        height: 90px;
+        padding: 45px 0;
+    }
+    .ct-tb-2 td{
+        padding: 10px 5px;
+    }
+    .ct-btns .active{
+            border: 1px solid #d6d5d5;
+            padding:5px 10px;
+            border-radius:5px;
+    }
+    .ct-btns span{
+        margin-right:10px;
+    }
+    .appointment-form .form-control,
+    .appointment-form input,
+    .appointment-form select,
+    .appointment-form textarea {
+        width: 100%!important;
+        padding: 10px 15px;
+        margin: 0 0 10px;
+        float: none;
+        color: #646464;
+        box-shadow: 0px 10px 16px rgba(0,0,0,0.1);
+        height: 40px;
+        background: #fff;
+        &:focus {
+            background: $c_grey_light;
+            box-shadow: 0px 10px 16px rgba(0, 0, 0, .1);
+            outline: none;
+        }
+    }
+    .tb-padding{
+        padding:15px;
+        background-color: #fafafa;
+        margin-bottom:15px;
+    }
+    .tb-heading{
+        font-size:14px; 
+        font-weight:800;
+    }
+    .tb-sub-heading{
+        font-weight:700;
+    }
+    .ht-select{
+        background-color: #0082bd;
+        color: #fff;
+        &:focus{
+            background-color: #0082bd;
+            color: #fff;
+        }
+    }
+    .personal-details{
+        width:100%;
+    }
+    .ct-tb-1 tr:first-child{
+        background: #0082bd;
+        color: #fff;
+    }
+    .ct-tb-1 tr{
+        background: #fafafa;
+    }
+    .ct-tb-1 tr th{
+        color:#fff;
+    }
+    .ct-tb-rec input[type="text"]{
+    box-shadow: none;
+    background: #fafafa;
+    border: 1px solid #ccc;
+    height: 35px !important;
+    margin-bottom: 0;
+}
+
+    

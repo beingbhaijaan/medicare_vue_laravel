@@ -8,7 +8,7 @@
         <!-- Content Page
         ============================================= -->
         <div class="container">
-            <div class="space_x4">
+            <div class="space_x1">
 
                 <div class="profile_sidebar1">
 
@@ -20,7 +20,7 @@
 
                         <!-- Medical Records
                         ============================================= -->
-                       <div class="padding_15 patient-form">
+                       <div class="padding_15 patient-form pat-record-form">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 r">
             <h2 class="light bordered record-heading">
@@ -31,119 +31,95 @@
     </div>
     <form>
     <div class="row">
-    <div class="col-xs-12 col-sm-4 p_bottom_20 h-345 ct-padding-top">
-    <table>
+    <div class="col-xs-12 col-sm-4 p_bottom_20 ct-padding-top">
+    <div class="tb-padding">
+    <table class="personal-details">
     <tr>
-    <td class="w-100">HEIGHT</td>
-    <td class="w-100"><input type="text" name=""></td>
-    <td><select style="width: 50px !important;">
+    <td><input type="text" name="" placeholder="HEIGHT"></td>
+    <td><select class="ht-select">
     <option>INCH</option>
     <option>CM</option>
     <option>FT</option>
     </select></td>
     </tr>
     <tr>
-    <td class="w-100">WEIGHT</td>
-    <td><input type="text" name=""></td>
+    <td colspan="2"><input type="text" name="" placeholder="WEIGHT"></td>
     </tr>
     <tr>
-    <td class="w-100">DOB</td>
-    <td><input type="date" name=""></td>
+    <td colspan="2"><input type="date" name="" placeholder="DOB"></td>
     <td></td>
-    </tr>
-    </table>
-    <br>
-    <table>
-    <tr>
-    <td class="w-100">CHEST</td>
-    <td><input type="text" name=""></td>
-    </tr>
-    <tr>
-    <td class="w-100">WAIST</td>
-    <td><input type="text" name=""></td>
-    </tr>
-    <tr>
-    <td class="w-100">SHOULDER</td>
-    <td><input type="text" name=""></td>
-    <td></td>
-    </tr>
-    <tr>
-    <td class="w-100">THIGH</td>
-    <td><input type="text" name=""></td>
-    
     </tr>
     </table>
     </div>
-    <div class="col-xs-12 col-sm-3 p_bottom_20 h-345 ct-border ct-padding-top">
-    <p style="font-size:14px;">WHAT IS THE BODY TYPE</p>
+    <div class="tb-padding">
+    <table class="personal-details">
+    <tr>
+    <td><input type="text" name="" placeholder="CHEST"></td>
+    <td><input type="text" name="" placeholder="WAIST"></td>
+    </tr>
+    <tr>
+    <td><input type="text" name="" placeholder="SHOULDER"></td>
+    <td><input type="text" name="" placeholder="THIGH"></td>
+    </tr>
+    </table>
+    </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 p_bottom_20 ct-padding-top">
+    <p class="tb-heading">WHAT IS THE BODY TYPE</p>
     <div class="form-group">
-    <span class="flex-show">
-    <input type="radio" style="margin-right:5px;"> Ectomorph</span>
+    <span class="flex-show tb-sub-heading">
+    <input type="radio" name="body_type" style="margin-right:5px;"> Ectomorph</span>
     <p style="padding-left:26px;"> Lean and Long with difficulty building muscle</p>
     </div>
     <div class="form-group">
-     <span class="flex-show">
-     <input type="radio" style="margin-right:5px;"> Endomorph
+     <span class="flex-show tb-sub-heading">
+     <input type="radio" name="body_type" style="margin-right:5px;"> Endomorph
      </span>
       <p style="padding-left:26px;">Big, high body fat, often pear shaped, with a high tendency to store body fat.</p>
       </div>
       <div class="form-group">
-     <span class="flex-show">
-      <input type="radio" style="margin-right:5px;"> Mesomorph
+     <span class="flex-show tb-sub-heading">
+      <input type="radio" name="body_type" style="margin-right:5px;"> Mesomorph
       </span>
        <p style="padding-left:26px;"> Muscular and well built, with a high metabolism and responsive muscle cells</p>
        </div>
-       <p style="font-size:14px;">YOUR BMI FORM THE ABOVE IMFORMATION IS: 61</p>
+       <p class="tb-heading">YOUR BMI FORM THE ABOVE IMFORMATION IS: 61</p>
     </div>
-    <div class="col-xs-12 col-sm-5 p_bottom_20 h-345 ct-padding-top">
-    <table>
+    <div class="col-xs-12 col-sm-4 p_bottom_20 ct-padding-top">
+    <div class="tb-padding">
+    <table class="personal-details">
     <tr>
-    <td class="w-100">BP</td>
-    <td><input type="text" name=""></td>
+    <td><input type="text" name="" placeholder="BP"></td>
+    <td><input type="text" name="" placeholder="CHOLESTEROL"></td>
     </tr>
-    <tr>
-    <td class="w-100">CHOLESTEROL</td>
-    <td><input type="text" name=""></td>
-    </tr>
-    <br>
     </table>
-    <table>
+    </div>
+
+    <div class="tb-padding">
+    <table class="personal-details">
+    <tr><td colspan="2"><p class="tb-heading">EYE SIGHT</p></td></tr>
     <tr>
-    <td colspan="2">EYE SIGHT</td>
-    
+    <td><input type="text" name="" placeholder="LEFT EYE"></td>
+    <td><input type="text" name="" placeholder="RIGHT EYE"></td>
     </tr>
     <tr>
-    <td class="w-100">LEFT EYE</td>
-    <td><input type="text" name=""></td>
+    <td><input type="text" name="" placeholder="SPHERE(SPH)-RIGHT"></td>
+    <td><input type="text" name="" placeholder="SPHERE(SPH)-LEFT"></td>
     </tr>
     <tr>
-    <td class="w-100">RIGHT EYE</td>
-    <td><input type="text" name=""></td>
-    </tr>
-    
-    </table>
-    <table>
-    <tr>
-    <td class="w-150">SPHERE(SPH)-RIGHT</td>
-    <td><input type="text" name=""></td>
-    <td class="w-150">SPHERE(SPH)-LEFT</td>
-    <td><input type="text" name=""></td>
-    </tr>
-    <tr>
-    <td class="w-150">CYLINDER(CYL)-RIGHT</td>
-    <td><input type="text" name=""></td>
-    <td class="w-150">CYLINDER(CYL)-LEFT</td>
-    <td><input type="text" name=""></td>
+    <td><input type="text" name="" placeholder="CYLINDER(CYL)-RIGHT"></td>
+    <td><input type="text" name="" placeholder="CYLINDER(CYL)-LEFT"></td>
     </tr>
     
     </table>
+    </div>
     </div>
      </div>
  <!-- Second box-->
 <div class="row">
     <div class="col-xs-12 col-sm-12 p_bottom_20 ">
     <h4>PRESENT DISEASE <span style="float:right;"><input type="button" value="+"></span></h4>
-    <table style="width:100%;" class="ct-tb-1">
+    <table style="width:100%;" class="ct-tb-1 ct-tb-rec">
     <tr>
     <th>SL.N</th>
     <th>DISEASE</th>
@@ -154,7 +130,7 @@
          <th>BOOK APPOITMENT</th>
     </tr>
     <tr>
-    <td><input type="text" name=""></td>
+    <td><input type="text" value="1" readonly style="border:0;"></td>
     <td><input type="text" name=""></td>
     <td><input type="text" name=""></td>
     <td><input type="text" name=""></td>
@@ -171,7 +147,7 @@
     <div class="col-xs-12 col-sm-12 p_bottom_20">
     <h4>PRECRIPTION <span style="float:right;"><input type="button" value="+"></span></h4>
     <p>No medical history found entered, Please enter by using the add button</p>
-    <table style="width:50%;" class="ct-tb-1">
+    <table style="width:50%;" class="ct-tb-1 ct-tb-rec">
     <tr>
     <th>SL.N</th>
     <th>DISEASE</th>
@@ -179,7 +155,7 @@
      
     </tr>
     <tr>
-    <td><input type="text" name=""></td>
+    <td><input type="text" value="1" readonly style="border:0;"></td>
     <td><input type="text" name=""></td>
     <td><input type="text" name=""></td>
      </tr>
@@ -208,7 +184,7 @@
     import { mapGetters } from 'vuex'
 
     export default {
-        name: 'Profile',
+        name: 'Patient-record',
         middleware: 'patient',
         components: { Banner, PatientCard, AppointmentsFeed, MedicalRecords },
         data () {
