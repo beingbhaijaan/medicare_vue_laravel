@@ -1,0 +1,111 @@
+/*  ========================================================
+    Custom Colors
+    ========================================================  */
+$c_green: #1ABC9C;
+$c_green_dark: #0c9d80;
+$c_blue: #025ca5;
+$c_red: #d9534f;
+$c_red_dark: #760304;
+$c_yellow: #f0ad4e;
+$c_white: #fff;
+$c_grey_dark: #646464;
+$c_grey: #eee;
+$c_grey_light: #fafafa;
+$c_grey_dark: #444;
+
+/*  ========================================================
+    Variables
+    ========================================================  */
+@each $elm_p_m in padding, margin {
+    .#{$elm_p_m}_ {
+        @for $i from 0 through 30 {
+            &#{$i} {
+                #{$elm_p_m}: #{$i}px;
+            }
+        }
+    }
+}
+
+.space_x {
+    @for $i from 0 through 5 {
+        &#{$i}{
+            padding: #{$i}vw 0;
+        }
+    }
+}
+
+.p_ {
+    @each $p_elm in top,left,right,bottom {
+        @for $i from 0 through 50 {
+            &#{$p_elm}_#{$i}{
+                padding-#{$p_elm}: #{$i}px!important;
+            }
+        }
+    }
+}
+
+.m_ {
+    @each $p_elm in top,left,right,bottom {
+        @for $i from 0 through 50 {
+            &#{$p_elm}_#{$i} {
+                margin-#{$p_elm}: #{$i}px!important;
+            }
+        }
+    }
+}
+
+.f_size_ {
+    @for $i from 9 through 60 {
+        &#{$i}{
+            font-size: #{$i}px!important;
+        }
+    }
+}
+
+/*  ========================================================
+    Mixins
+    ========================================================  */
+@mixin transition($transition-property, $transition-time, $method) {
+    transition: $transition-property $transition-time $method;
+    -webkit-transition: $transition-property $transition-time $method;
+}
+
+@mixin appearance-none {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+@mixin animation($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -ms-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};
+}
+
+@mixin transform($str) {
+    -webkit-transform: #{$str};
+    -moz-transform: #{$str};
+    -ms-transform: #{$str};
+    -o-transform: #{$str};
+    transform: #{$str};
+}
+
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}

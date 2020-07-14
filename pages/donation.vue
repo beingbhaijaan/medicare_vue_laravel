@@ -1,0 +1,11 @@
+<template>
+<div id="content-index"><div><div class="banner_inner"><div class="parallax Masthead" style="height: 70vh;"><div class="is-parallax Masthead__image" style="transform: translate3d(0px, -77.5px, 0px);"><img src="/images/banners/donation.jpg" alt="Donation"></div></div> <div class="content_banner"><div class="container"><h1 class="animated fadeInDown"><!----> 
+                Donation
+            </h1></div></div></div> <div class="space_x5"><div class="container"><h2 class="light bordered main-title">Donation to Medicare Foundation</h2> <article class="big-font animated fadeInUp"><div>
+<img src="https://www.planindia.org/sites/default/files/col_img1.jpg" alt="" class="img-responsive pull-left m_right_20 m_bottom_20" style="max-height: 240px;"><p>Lorem ipsum dolor sit amet, consectetuer commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+<p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Lorem ipsum dolor sit amet, consectetuer commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+<p>Lorem ipsum dolor sit amet, consectetuer commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+<div class="clearfix text-center">    <button class="btn btn-default btn-lg"><i class="fas fa-heart m_right_5"></i> Donate now <i class="fas fa-heart m_left_5"></i></button>
+</div>
+</div></article></div></div></div></div>
+</template>

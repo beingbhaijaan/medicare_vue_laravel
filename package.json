@@ -1,0 +1,44 @@
+{
+  "name": "medicare-tenant",
+  "version": "1.0.0",
+  "description": "Nuxt.js project",
+  "author": "Fabio Aurelio <fabioaurelio1269@gmail.com>",
+  "private": true,
+  "config": {
+    "nuxt": {
+      "host": "127.0.0.1",
+      "port": "3001"
+    }
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "5.4.1",
+    "@nuxtjs/axios": "5.3.3",
+    "@nuxtjs/dotenv": "1.1.1",
+    "moment-timezone": "0.5.21",
+    "nuxt": "1.4.2",
+    "vue-affix": "0.4.0",
+    "vue-awesome-swiper": "3.1.3",
+    "vue-event-calendar": "1.5.2",
+    "vue-multiselect": "2.1.3",
+    "vue-recaptcha": "1.1.1",
+    "vue-sweetalert2": "1.5.3",
+    "vuex-persistedstate": "2.5.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "8.2.1",
+    "eslint": "4.15.0",
+    "eslint-friendly-formatter": "3.0.0",
+    "eslint-loader": "1.7.1",
+    "eslint-plugin-vue": "4.0.0",
+    "node-sass": "4.9.3",
+    "sass-loader": "7.1.0"
+  }
+}

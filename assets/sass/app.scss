@@ -1,0 +1,22 @@
+
+// MEDICOM theme settings
+@import "../vendor/medicom-theme/css/cyan.css";
+@import "../vendor/medicom-theme/css/medicom.css";
+@import "../vendor/medicom-theme/css/revolution_style.css";
+@import "../vendor/medicom-theme/css/settings.css";
+@import "../vendor/medicom-theme/css/bootstrap.css";
+
+
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts" !default;
+
+// Fontawesome
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+
+
+
+// Custom styles
+@import "_mixin";
+@import "custom";
