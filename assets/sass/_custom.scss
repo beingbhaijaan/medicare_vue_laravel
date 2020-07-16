@@ -398,7 +398,7 @@
         min-height: 100vh;
         box-shadow: 0 5px 5px rgba(0, 0, 0, .15);
         background: $c_white;
-        overflow: auto;
+        //overflow: auto;
         z-index: 9999;
         @include transition(all, 0.2s, ease-out);
     
@@ -2385,7 +2385,7 @@
             justify-content: center;
     
             a {
-                padding: 18px 9px;
+                padding: 10px;
                 @include transition(all, 0.2s, ease-out);
     
                 i {
@@ -2405,10 +2405,13 @@
             }
     
             .dropdown-menu {
+                position: absolute !important;
                 display: block;
                 opacity: 0;
                 padding: 0;
-                overflow: hidden;
+                left:100% !important;
+                right:unset !important;
+               // overflow: hidden;
                 box-shadow: 0 6px 15px -4px rgba(0, 0, 0, .3);
                 visibility: hidden;
                 @include transform(translate(0, 5px));
@@ -2697,6 +2700,7 @@
         display: flex;
         padding: 0;
         margin: 6px 0;
+        width: 100%;
     }
     
     .custom_menu>ul>li>a i{display: block;
@@ -2714,6 +2718,10 @@
         color: #707070;
         -webkit-transition: transform .2s ease-out;
         margin: 0;
+    }
+    .custom_menu>ul>li:hover .ctm-submenu{
+        opacity: 1;
+        visibility:visible;
     }
     .custom_menu>ul>li.active> a i{
         color: #0082bd;
