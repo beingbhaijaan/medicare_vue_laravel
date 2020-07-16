@@ -18,9 +18,12 @@
 
         <!-- <div class="preloader" v-if="loading || userLoading"></div> -->
 
-        <Header :menuOpen="menuOpen" @toggleMenu="menuOpen = !menuOpen"/>
-
-       <!-- <Sidebar :menuOpen="menuOpen" @toggleMenu="menuOpen = !menuOpen"/>--->
+       
+       <!-- <Sidebar  :menuOpen="menuOpen" @toggleMenu="menuOpen = !menuOpen"/> -->
+           
+         <Header :menuOpen="menuOpen" @toggleMenu="menuOpen = !menuOpen"/>
+        
+       
 
         <div id="content-index" @click="menuOpen = false">
             <nuxt/>
@@ -47,7 +50,7 @@
         name: 'Master',
         components: {
             Header,
-            
+            Sidebar,
             RegisterBar,
             Footer
         },
