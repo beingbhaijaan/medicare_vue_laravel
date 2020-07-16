@@ -64,7 +64,7 @@
                             
                         <li class="dropdown last" v-if="roleName === 'patient'">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fas fa-gear"></i>
+                                <i class="fas fa-table"></i>
                                 Health Record
                                 <i class="fas fa-chevron-down"></i>
                             </a>
@@ -72,32 +72,37 @@
                                 <li v-if="roleName === 'patient'" :class="`${$route.name === 'expenditure' ? 'active' : ''}`">
                             <nuxt-link :to="{ name: 'expenditure' }"><i class="fas fa-user"></i>Expenditure</nuxt-link></li>
 
-                        <li v-if="roleName === 'patient'" :class="`${$route.name === 'expenditure-1' ? 'active' : ''}`">
-                            <nuxt-link :to="{ name: 'expenditure-1' }"><i class="fas fa-user"></i>Expenditure 1</nuxt-link></li>
+                            <li v-if="roleName === 'patient'" :class="`${$route.name === 'expenditure-1' ? 'active' : ''}`">
+                                <nuxt-link :to="{ name: 'expenditure-1' }"><i class="fas fa-user"></i>Expenditure 1</nuxt-link></li>
+                                
+                            <li v-if="roleName === 'patient'" :class="`${$route.name === 'ipharmacy' ? 'active' : ''}`">
+                                <nuxt-link :to="{ name: 'ipharmacy' }"><i class="fas fa-user"></i>iPharmacy</nuxt-link></li>
                             
-                        <li v-if="roleName === 'patient'" :class="`${$route.name === 'ipharmacy' ? 'active' : ''}`">
-                            <nuxt-link :to="{ name: 'ipharmacy' }"><i class="fas fa-user"></i>iPharmacy</nuxt-link></li>
-                        
-                        <li v-if="roleName === 'patient'" :class="`${$route.name === 'pharmacy' ? 'active' : ''}`">
-                            <nuxt-link :to="{ name: 'pharmacy' }"><i class="fas fa-user"></i>Pharmacy</nuxt-link></li>
+                            <li v-if="roleName === 'patient'" :class="`${$route.name === 'pharmacy' ? 'active' : ''}`">
+                                <nuxt-link :to="{ name: 'pharmacy' }"><i class="fas fa-user"></i>Pharmacy</nuxt-link></li>
 
-                        <li v-if="roleName === 'patient'" :class="`${$route.name === 'medical-prediction' ? 'active' : ''}`">
-                            <nuxt-link :to="{ name: 'medical-prediction' }"><i class="fas fa-user"></i>Medical Prediction</nuxt-link></li>
-                        
+                            <li v-if="roleName === 'patient'" :class="`${$route.name === 'medical-prediction' ? 'active' : ''}`">
+                                <nuxt-link :to="{ name: 'medical-prediction' }"><i class="fas fa-user"></i>Medical Prediction</nuxt-link></li>
+                                              
+                            </ul>
+                        </li>
                         <li v-if="roleName === 'patient'" :class="`${$route.name === 'plan-your-trip-patient' ? 'active' : ''}`">
                             <nuxt-link :to="{ name: 'plan-your-trip-patient' }"><i class="fas fa-user"></i>Plan Your Trip</nuxt-link></li>
                         
                         <li v-if="roleName === 'patient'" :class="`${$route.name === 'donation-patient' ? 'active' : ''}`">
                             <nuxt-link :to="{ name: 'donation-patient' }"><i class="fas fa-user"></i>Donation</nuxt-link></li>
 
-                       
-                            </ul>
-                        </li>
                          <li v-if="roleName === 'patient'" :class="`${$route.name === 'schedule-appointment' ? 'active' : ''}`">
                         <nuxt-link :to="{ name: 'schedule-appointment' }"><i class="fas fa-calendar-o"></i>Schedule Appointment</nuxt-link></li>
                         
                         <li v-if="roleName === 'patient'" :class="`${$route.name === 'patient-doctors' ? 'active' : ''}`">
                         <nuxt-link :to="{ name: 'patient-doctors' }"><i class="fas fa-user-md"></i>Search Doctors</nuxt-link></li>
+
+                        <li>
+                        <a href="#"><i class="fas fa-user-md"></i>Video Confercing</a></li>
+
+                        <li>
+                        <a><i class="fas fa-user-md"></i>Tele Medicine</a></li>
                         
                         <li class="dropdown last" v-if="roleName === 'patient'">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -110,55 +115,6 @@
                                 <li :class="`${$route.name === 'change-password' ? 'active' : ''}`"><nuxt-link :to="{ name: 'change-password' }"><i class="fas fa-lock"></i>Change Password</nuxt-link></li>
                                 <li><a href="javascript:;" @click="logout()"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
                             </ul>
-                        </li>
-
-                        <li class="divider"></li>
-
-                        <!-- Menu Site -->
-                        <li class="title_menu" :class="`${isGuest ? 'hidden' : ''}`">
-                            <span class="show padding_10 text_uppercase bold p_left_15 text_truncate">Institutional</span>
-                        </li>
-                        <li :class="`${$route.name === 'index' ? 'active' : ''}`">
-                            <nuxt-link :to="{ name: 'index' }"><i class="fas fa-home"></i>Home</nuxt-link>
-                        </li>
-                        <li :class="`${$route.name === 'about' ? 'active' : ''}`">
-                            <nuxt-link :to="{ name: 'about' }"><i class="fas fa-building"></i>About Us</nuxt-link>
-                        </li>
-                        <li class="dropdown">
-                            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fas fa-stethoscope"></i>
-                                Services
-                                <i class="fas fa-chevron-down"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><nuxt-link :to="{ name: 'procedures' }">Procedures</nuxt-link></li>
-                                <li v-for="service in services" :key="service.reference">
-                                    <nuxt-link :to="{ name: 'services-reference', params: { reference: service.reference } }">{{ service.menu_title }}</nuxt-link>
-                                </li>
-                            </ul>
-                        </li>
-                        <li :class="`${$route.name === 'protection-plan' ? 'active' : ''}`">
-                            <nuxt-link :to="{ name: 'protection-plan' }"><i class="fas fa-h-square"></i>Protection Plan</nuxt-link>
-                        </li>
-                        <li :class="`${$route.name === 'blog' ? 'active' : ''}`">
-                            <nuxt-link :to="{ name: 'blog' }"><i class="fas fa-rss"></i>Blog</nuxt-link>
-                        </li>
-                        <li :class="`${$route.name === 'contact' ? 'active' : ''}`">
-                            <nuxt-link :to="{ name: 'contact' }"><i class="fas fa-envelope"></i>Contact</nuxt-link>
-                        </li>
-                        <li class="dropdown last login registration" v-show="isGuest">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                Register
-                                <i class="fas fa-chevron-down"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><nuxt-link :to="{ name: 'join-as-doctor' }">Doctor</nuxt-link></li>
-                                <li><nuxt-link :to="{ name: 'join-as-patient' }">Patient</nuxt-link></li>
-                                <li><nuxt-link :to="{ name: 'join-as-partner' }">Partner</nuxt-link></li>
-                            </ul>
-                        </li>
-                        <li class="login" v-show="isGuest">
-                            <nuxt-link :to="{ name: 'login' }">Login</nuxt-link>
                         </li>
                     </ul>
                 </div>

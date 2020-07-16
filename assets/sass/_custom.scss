@@ -450,7 +450,7 @@
                             position: relative;
                             width: 100%;
                             border-radius: 0;
-                            padding: 15px 25px 15px 10px;
+                            padding: 12px 25px 12px 10px;
                             line-height: 20px;
                             overflow: hidden;
                             text-overflow: ellipsis;
@@ -469,6 +469,7 @@
                             i.fa-chevron-down {
                                 position: absolute;
                                 right: 8px;
+                                transform: rotate(-90deg);
                             }
     
                             &.disabled,
@@ -3286,5 +3287,8 @@
     height: 35px !important;
     margin-bottom: 0;
 }
-
+.medicom-header.medical-nav.sidebar .container .navbar-collapse .custom_menu li:last-child .dropdown-menu{
+    top:unset;
+    bottom: -12px;
+}
     

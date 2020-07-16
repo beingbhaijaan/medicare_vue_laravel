@@ -44,14 +44,14 @@
         </div>
          <div class="col-xs-12 col-sm-4 p_bottom_20 ">
             <div class="flex-show tb-sub-heading" style="justify-content: flex-end;">
-                <span class="flex-show"><input type="radio"> CHOW INCOME in Graph</span>
+                <span class="flex-show"><input type="radio"> SHOW INCOME IN GRAPH</span>
             </div>
         </div>
     <table style="width:100%;" class="ct-tb-1">
     <tr>
     <th>SL.N</th>
     <th>DATE</th>
-     <th>HOSPITLA</th>
+     <th>HOSPITAL</th>
       <th>TOTAL PATIENTS</th>
        <th>AMOUNT</th>
         <th>DESCRIPTION</th>
@@ -94,7 +94,7 @@
     <table style="width:50%;" class="ct-tb-1">
     <tr>
     <th>SL.N</th>
-      <th>HOSPITLA</th>
+      <th>HOSPITAL</th>
       <th>TOTAL PATIENTS</th>
        <th>AMOUNT</th>
          <th>DETAILS</th>
