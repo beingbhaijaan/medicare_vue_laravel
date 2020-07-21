@@ -118,7 +118,7 @@
  <!-- Second box-->
 <div class="row">
     <div class="col-xs-12 col-sm-12 p_bottom_20 ">
-    <h4>PRESENT DISEASE <span style="float:right;"><input type="button" value="+"></span></h4>
+    <h4>PRE EXISTING CONSITION<span style="float:right;"><input type="button" value="+"></span></h4>
     <table style="width:100%;" class="ct-tb-1 ct-tb-rec">
     <tr>
     <th>SL.N</th>
